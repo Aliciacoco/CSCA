@@ -181,7 +181,7 @@ const CHAPTER_DATA = [
         tableRows: [
             { 
                 name: "北京大学", 
-                exists: "是 (基地校)", 
+                exists: "是", 
                 mode: "线下", 
                 duration: "1/1.5年",
                 subjects: "汉语/数学",
@@ -208,7 +208,15 @@ const CHAPTER_DATA = [
                 tuition: "3.9万", 
                 link: "<a href='https://admission.blcu.edu.cn/ykxskc/list.htm' target='_blank' class='text-blue-500'>🔗 </a>" 
             },
-            
+            { 
+                name: "东南大学", 
+                exists: "是", 
+                mode: "线下", 
+                duration: "1年",
+                subjects: "汉语（必修）/数学等（选修）",
+                tuition: "1.6万",
+                link: "<a href='https://cis.seu.edu.cn/2026/0310/c14317a557660/page.htm' target='_blank' class='text-blue-500'>🔗</a>"
+            },
             { 
                 name: "南京大学", 
                 exists: "是", 
