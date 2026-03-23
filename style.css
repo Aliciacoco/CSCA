@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap');
+
+:root {
+    --duo-green: #58CC02;
+    --duo-blue: #1CB0F6;
+    --duo-orange: #FF9600;
+    --duo-border: #E5E5E5;
+    --duo-text: #4B4B4B;
+    --duo-bg: #F8FAFC;
+}
+
+body {
+    font-family: 'Nunito', 'PingFang SC', sans-serif;
+    background-color: var(--duo-bg);
+    color: var(--duo-text);
+}
+
+/* PPT 风格卡片 */
+.ppt-card {
+    background: white;
+    border: 2px solid var(--duo-border);
+    border-radius: 24px;
+    box-shadow: 0 6px 0 var(--duo-border);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.ppt-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 var(--duo-border);
+    border-color: var(--duo-blue);
+}
+
+.ppt-card:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 var(--duo-border);
+}
+
+/* 侧边栏样式 */
+#sidebar {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 3px solid var(--duo-border);
+}
+
+.sidebar-hidden {
+    transform: translateX(100%);
+}
+
+/* PDF 列表项样式 */
+.pdf-item {
+    border: 2px solid var(--duo-border);
+    border-bottom-width: 4px;
+    transition: all 0.2s;
+}
+
+.pdf-item:hover {
+    border-color: var(--duo-blue);
+    background-color: #F0F9FF;
+}
+
+.no-print {
+    user-select: none;
+}
+
+/* style.css - CSCA Campus 视觉样式表 */
+
+/* 1. 字体与核心变量 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap');
+
+:root {
+    --duo-green: #58CC02;
+    --duo-blue: #1CB0F6;
+    --duo-orange: #FF9600;
+    --duo-purple: #CE82FF;
+    --duo-red: #FF4B4B;
+    --duo-border: #E5E5E5;
+    --duo-text: #4B4B4B;
+    --duo-bg: #F8FAFC;
+}
+
+/* 2. 基础重置 */
+* {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    /* 确保打印时颜色不丢失 */
+    print-color-adjust: exact;
+}
+
+body {
+    font-family: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background-color: var(--duo-bg);
+    margin: 0;
+    color: var(--duo-text);
+    overflow-x: hidden;
+}
+
+/* 3. PPT 页面标准容器 (16:9 比例) */
+.ppt-page {
+    width: 960px;
+    height: 540px;
+    margin: 30px auto;
+    /* 网页预览时的间距 */
+    background: white;
+    border: 2px solid var(--duo-border);
+    border-radius: 20px;
+    padding: 40px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 6px 0 var(--duo-border);
+    transition: transform 0.3s ease;
+}
+
+/* 4. 侧边栏及联动样式 */
+#menu-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link {
+    transition: all 0.2s;
+    border: 2px solid transparent;
+    color: #AFAFAF;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background: #F9FAFB;
+    border-color: var(--duo-border);
+}
+
+/* 联动激活状态：蓝、橙、绿、紫、红 */
+.nav-link.active-blue {
+    color: var(--duo-blue);
+    border-color: var(--duo-border);
+    background: #f0f9ff;
+}
+
+.nav-link.active-orange {
+    color: var(--duo-orange);
+    border-color: var(--duo-border);
+    background: #fffaf0;
+}
+
+.nav-link.active-green {
+    color: var(--duo-green);
+    border-color: var(--duo-border);
+    background: #f7fff0;
+}
+
+.nav-link.active-purple {
+    color: var(--duo-purple);
+    border-color: var(--duo-border);
+    background: #fdf4ff;
+}
+
+.nav-link.active-red {
+    color: var(--duo-red);
+    border-color: var(--duo-border);
+    background: #fff5f5;
+}
+
+/* 5. 交互组件 */
+.duo-btn-blue {
+    background-color: var(--duo-blue);
+    box-shadow: 0 4px 0 #1899d6;
+}
+
+.duo-btn-blue:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1899d6;
+}
+
+.transition-box {
+    background: #F9FAFB;
+    border: 2px dashed var(--duo-border);
+    border-radius: 16px;
+    padding: 15px 20px;
+    margin-top: auto;
+}
+
+/* 锚点滚动偏移 */
+section {
+    scroll-margin-top: 50px;
+}
+
+/* 6. 核心：原生打印 PDF 修复方案 */
+@media print {
+    @page {
+        size: 960px 540px;
+        margin: 0;
+    }
+
+    body {
+        background: white !important;
+        margin: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .ppt-page {
+        margin: 0 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        page-break-after: always;
+        width: 960px !important;
+        height: 540px !important;
+        display: flex !important;
+    }
+
+    /* 强制内容不被切断 */
+    .content-body-wrapper {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    /* 确保 grid 布局在打印时依然生效 */
+    .grid {
+        display: grid !important;
+        /* 强制保持 4 列，防止变成纵向单列 */
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    /* 如果你使用的是 flex 布局，确保它不换行 */
+    .flex-row-print {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
+
+    /* 强制最后一页不产生分页 */
+    .ppt-page:last-child {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+/* 7. 辅助排版类 */
+.text-stroke-white {
+    -webkit-text-stroke: 1px white;
+}
+
+/* style.css */
+
+/* 背景高亮 */
+.highlight-green {
+    background: #d7ffb8;
+    padding: 0 4px;
+    border-radius: 4px;
+    color: #58CC02;
+}
+
+.highlight-blue {
+    background: #d1f2ff;
+    padding: 0 4px;
+    border-radius: 4px;
+    color: #1CB0F6;
+}
+
+.highlight-purple {
+    background: #fdf4ff;
+    /* 极其浅的紫粉色背景，不抢视线 */
+    color: #CE82FF;
+    /* 多邻国标志性的紫色 */
+    padding: 2px 6px;
+    /* 稍微加大一点左右内边距，更像标签 */
+    border-radius: 6px;
+    font-weight: 800;
+    /* 稍微加粗，让紫色更显眼 */
+}
+.highlight-orange {
+    background: #fff2cc;
+    /* 极其浅的橙黄色背景，不抢视线 */
+    color: #FF9600;
+    /* 多邻国标志性的橙色 */
+    padding: 2px 6px;
+    /* 稍微加大一点左右内边距，更像标签 */
+    border-radius: 6px;
+    font-weight: 800;
+    /* 稍微加粗，让紫色更显眼 */
+}
+
+/* 橙色波浪线 */
+.wavy-orange {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--duo-orange);
+    text-underline-offset: 4px;
+}
+
+/* 卡片容器设为相对定位，方便定位右上角链接 */
+.card-container {
+    position: relative;
+}
+
+/* 右上角链接图标样式 */
+.card-link {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #cecece;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.card-link:hover {
+    color: var(--duo-blue);
+    transform: scale(1.2);
+}
+
+/* style.css */
+
+.duo-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid var(--duo-border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.duo-table th {
+    background-color: var(--duo-blue);
+    color: white;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.duo-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--duo-border);
+    font-size: 11px;
+    font-weight: 700;
+    color: #777;
+}
+
+.duo-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* 必考/选考的侧边标签样式 */
+.badge-must {
+    color: #58CC02;
+    background: #d7ffb8;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+.badge-opt {
+    color: #FF9600;
+    background: #fff2cc;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+/* style.css */
+
+
+.image-component-container:hover {
+    transform: scale(1.01);
+    /* 鼠标悬停时轻微放大，提示可点击 */
+}
+
+/* 蒙层动画 */
+#image-overlay {
+    backdrop-filter: blur(8px);
+    /* 蒙层背景模糊，显得高级 */
+}
+
+/* 打印时隐藏蒙层 */
+@media print {
+    #image-overlay {
+        display: none !important;
+    }
+}
+
+/* style.css */
+
+/* 在打印模式下，如果左右分栏太挤，可以强制回退为上下布局 */
+@media print {
+    .grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* 确保分栏内的图片不会过大 */
+
+.image-component-container {
+    width: 100%;
+    /* 强制比例 */
+    aspect-ratio: 16 / 9;
+    background: #f8fafc;
+    /* 1. 增加圆角和边框 */
+    border: 2px solid #E5E7EB;
+    /* 淡淡的灰色边框 */
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+    /* 确保容器不被压缩 */
+    flex-shrink: 0;
+}
+
+.image-component-container img {
+    width: 100%;
+    height: 100%;
+    /* 保证图片不拉伸，填满 16:9 */
+    object-fit: cover;
+}
+
+/* 针对图片描述的微调 */
+.image-caption {
+    margin-top: 8px;
+    color: #9CA3AF;
+    /* gray-400 */
+    font-weight: 700;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #E5E5E5;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #1CB0F6;
+}
+
+
+
+/* 多邻国风格 Tips 核心样式 */
+.duo-tips {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 12px;
+    color: white;
+    position: relative;
+    border: none;
+    user-select: none;
+    /* 默认动效 */
+    transition: transform 0.1s ease;
+}
+
+/* 3D 压感底色 */
+.duo-blue {
+    background-color: #1cb0f6;
+    box-shadow: 0 4px 0 #1899d6;
+}
+
+.duo-green {
+    background-color: #58cc02;
+    box-shadow: 0 4px 0 #46a302;
+}
+
+.duo-red {
+    background-color: #ff4b4b;
+    box-shadow: 0 4px 0 #d33131;
+}
+
+.duo-orange {
+    background-color: #ff9600;
+    box-shadow: 0 4px 0 #e58700;
+}
+
+.duo-purple {
+    background-color: #ce82ff;
+    box-shadow: 0 4px 0 #af5ee1;
+}
+
+.duo-gray {
+    background-color: #afafaf;
+    box-shadow: 0 4px 0 #898989;
+}
+
+/* 模拟点击微动 */
+.duo-tips:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}

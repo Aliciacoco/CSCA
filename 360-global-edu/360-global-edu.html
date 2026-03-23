@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>360 Global Edu | 数字化方案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div id="sidebar" class="no-print fixed left-6 top-1/2 -translate-y-1/2 z-[60] flex items-start">
+        <div id="menu-card"
+            class="hidden bg-white border-[3px] border-[#E5E5E5] rounded-[1.5rem] p-4 shadow-xl w-56 transition-all overflow-hidden">
+            <div class="flex justify-between items-center mb-4 px-1">
+                <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest">Outline</span>
+                <button onclick="toggleSidebar()" class="text-gray-300 hover:text-gray-500 text-xs font-bold">✕</button>
+            </div>
+
+            <nav id="auto-nav" class="flex flex-col gap-1 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+            </nav>
+        </div>
+        <button id="expand-btn" onclick="toggleSidebar()"
+            class="ml-[-10px] bg-white border-[3px] border-[#E5E5E5] rounded-full w-12 h-12 shadow-lg flex flex-col items-center justify-center gap-1 hover:border-green-500 transition-all group">
+            <div class="w-4 h-1 bg-green-500 rounded-full group-hover:bg-green-600"></div>
+            <div class="w-4 h-1 bg-blue-500 rounded-full group-hover:bg-green-600"></div>
+            <div class="w-4 h-1 bg-orange-500 rounded-full group-hover:bg-green-600"></div>
+        </button>
+    </div>
+
+    <main id="content">
+        <section id="home" class="ppt-page flex-row items-center justify-between">
+            <div class="w-3/5">
+                <h1 class="text-5xl font-extrabold text-blue-400">直通中国<br><span
+                        class="text-green-500 text-6xl tracking-tighter">360 Global Edu</span></h1>
+                <p class="text-sm font-bold text-gray-300 mt-6 tracking-[0.3em] uppercase opacity-60">Digital Admissions
+                    2026</p>
+            </div>
+            <div
+                class="w-28 h-28 bg-green-500 rounded-[2.2rem] flex items-center justify-center text-white text-5xl font-black italic shadow-lg">
+                C</div>
+        </section>
+
+        <div id="dynamic-chapters"></div>
+
+        <section id="end"
+            class="ppt-page flex-col items-center justify-center text-center bg-gray-50 relative overflow-hidden">
+            <div class="absolute top-[-10%] right-[-10%] w-96 h-96 bg-green-50 rounded-full blur-3xl opacity-50"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50"></div>
+
+            <div class="relative z-10">
+                <div
+                    class="w-20 h-20 bg-green-500 rounded-[1.5rem] flex items-center justify-center text-white text-4xl font-black italic shadow-xl mx-auto mb-8">
+                    C
+                </div>
+
+                <h2 class="text-5xl font-extrabold text-gray-800 tracking-tight">
+                    360 Global Edu
+                </h2>
+
+                <p class="text-xl text-gray-400 mt-4 font-medium">
+                    CSCA Campus
+                </p>
+
+                <div class="w-16 h-1 bg-green-500 mx-auto my-10 rounded-full"></div>
+
+            </div>
+
+            <div class="absolute bottom-10 text-[10px] font-bold text-gray-300 uppercase tracking-[0.5em]">
+                CSCA Campus Strategic Plan © 2026
+            </div>
+        </section>
+    </main>
+
+    <div id="image-overlay"
+        class="fixed inset-0 bg-black/90 z-[9999] hidden flex items-center justify-center cursor-zoom-out"
+        onclick="closeOverlay()">
+        <img id="overlay-img" src=""
+            class="max-w-[90%] max-h-[90%] object-contain shadow-2xl transition-transform duration-300">
+    </div>
+
+    <script src="data.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

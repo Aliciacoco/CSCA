@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coco-os</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <nav
+        class="sticky top-0 bg-white border-b-2 border-gray-100 px-8 py-4 flex justify-between items-center z-50 shadow-sm">
+        <div class="flex items-center gap-3">
+            <div
+                class="w-10 h-10 bg-gradient-to-br from-[#58CC02] to-[#4CAF00] rounded-xl flex items-center justify-center shadow-[0_4px_0_#3E8E00] group cursor-pointer hover:rotate-3 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="4" />
+                    <path d="M9 9l3 3-3 3" />
+                    <line x1="15" y1="12" x2="15" y2="12" />
+                </svg>
+            </div>
+            <div class="text-2xl font-black text-gray-700 tracking-tighter">coco-os</div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button id="downloadBtn"
+                class="bg-[#1CB0F6] text-white px-6 py-2.5 rounded-2xl font-black text-sm shadow-[0_4px_0_#1899D6] hover:brightness-105 active:translate-y-1 active:shadow-none transition-all uppercase tracking-wider">
+                资料下载
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto py-16 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <a href="360-global-edu/360-global-edu.html" target="_blank"
+                class="ppt-card aspect-[16/9] flex flex-col p-0 group overflow-hidden relative border-2 border-[#E5E5E5] rounded-[24px] shadow-[0_6px_0_#E5E5E5] hover:shadow-[0_8px_0_#E5E5E5] transition-all">
+                <div
+                    class="absolute inset-0 w-full h-full bg-white transition-transform duration-500 group-hover:scale-105 origin-center flex items-center px-12">
+                    <div class="w-3/5">
+                        <h3 class="text-2xl font-black text-[#1CB0F6] leading-tight">直通中国</h3>
+                        <h3 class="text-3xl font-black text-[#58CC02] leading-tight tracking-tighter">360 Global Edu
+                        </h3>
+                        <p class="text-[8px] font-bold text-gray-300 mt-2 tracking-[0.2em] uppercase opacity-60">Digital
+                            Admissions 2026</p>
+                    </div>
+                    <div class="ml-auto">
+                        <div
+                            class="w-16 h-16 bg-[#58CC02] rounded-[1.2rem] flex items-center justify-center text-white text-3xl font-black italic shadow-lg">
+                            C</div>
+                    </div>
+                </div>
+                <div
+                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/80 to-transparent p-6 pt-12 z-10">
+                    <div class="text-gray-300 group-hover:text-[#1CB0F6] transition-colors mb-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+            <a href="Kaplan/Kaplan.html" target="_blank"
+                class="ppt-card aspect-[16/9] flex flex-col p-0 group overflow-hidden relative border-2 border-[#E5E5E5] rounded-[24px] shadow-[0_6px_0_#E5E5E5] hover:shadow-[0_8px_0_#E5E5E5] transition-all">
+                <div
+                    class="absolute inset-0 w-full h-full bg-white transition-transform duration-500 group-hover:scale-105 origin-center flex items-center px-12">
+                    <div class="w-3/5">
+                        <h3 class="text-2xl font-black text-[#2D0064] leading-tight">集团化预科</h3>
+                        <h3 class="text-4xl font-black text-[#6D28D9] leading-tight tracking-tighter">Kaplan</h3>
+                        <p class="text-[8px] font-bold text-gray-300 mt-2 tracking-[0.2em] uppercase opacity-60">Digital
+                            Admissions 2026</p>
+                    </div>
+                    <div class="ml-auto">
+                        <div
+                            class="w-16 h-16 bg-[#2D0064] rounded-[1.2rem] flex items-center justify-center text-white text-3xl font-black italic shadow-lg">
+                            K</div>
+                    </div>
+                </div>
+                <div
+                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/80 to-transparent p-6 pt-12 z-10">
+                    <div class="text-gray-300 group-hover:text-[#1CB0F6] transition-colors mb-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <div id="overlay"
+        class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden z-[60] transition-opacity duration-300 opacity-0">
+    </div>
+
+    <aside id="sidebar"
+        class="fixed right-0 top-0 h-full w-[400px] bg-white z-[70] sidebar-hidden flex flex-col shadow-2xl">
+        <div class="p-8 border-b-2 border-gray-100 flex justify-between items-center">
+            <div>
+                <h2 class="text-2xl font-black text-gray-800">资料库</h2>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">Resource Library</p>
+            </div>
+            <button id="closeSidebar"
+                class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-800 transition-all font-bold text-xl">✕</button>
+        </div>
+
+        <div id="libraryContainer" class="flex-1 overflow-y-auto p-6 bg-[#F8FAFC] space-y-4"></div>
+
+        <div class="p-6 border-t-2 border-gray-100 bg-white text-center">
+            <p class="text-[10px] font-bold text-gray-300 uppercase tracking-widest">© 2026 coco-os Strategic Plan</p>
+        </div>
+    </aside>
+
+    <script src="resources.js"></script>
+    <script>
+        // 1. 渲染资料库内容
+        const container = document.getElementById('libraryContainer');
+        if (typeof libraryData !== 'undefined' && container) {
+            container.innerHTML = libraryData.map(item => `
+                <a href="${item.link}" target="_blank" class="pdf-item block bg-white rounded-2xl p-5 flex items-center group shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white font-black mr-4 text-xs" 
+                         style="background-color: ${item.color}; border-bottom: 3px solid ${item.shadow}">
+                        ${item.type}
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-sm font-black text-gray-700">${item.title}</div>
+                        <div class="text-[10px] font-bold text-gray-400 mt-1 uppercase">${item.size} • 点击预览</div>
+                    </div>
+                    <div class="text-gray-200 group-hover:text-blue-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                        </svg>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // 2. 控制侧边栏逻辑
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const closeSidebar = document.getElementById('closeSidebar');
+
+        function openSidebar() {
+            sidebar.classList.remove('sidebar-hidden');
+            overlay.classList.remove('hidden');
+            setTimeout(() => overlay.classList.add('opacity-100'), 10);
+        }
+
+        function hideSidebar() {
+            sidebar.classList.add('sidebar-hidden');
+            overlay.classList.remove('opacity-100');
+            setTimeout(() => {
+                if (!sidebar.classList.contains('sidebar-hidden')) return;
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        downloadBtn.addEventListener('click', openSidebar);
+        closeSidebar.addEventListener('click', hideSidebar);
+        overlay.addEventListener('click', hideSidebar);
+    </script>
+</body>
+
+</html>
