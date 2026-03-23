@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-[#F7F9FA]">
 
     <nav
         class="sticky top-0 bg-white border-b-2 border-gray-100 px-8 py-4 flex justify-between items-center z-50 shadow-sm">
@@ -25,7 +25,6 @@
             </div>
             <div class="text-2xl font-black text-gray-700 tracking-tighter">coco-os</div>
         </div>
-
         <div class="flex items-center gap-4">
             <button id="downloadBtn"
                 class="bg-[#1CB0F6] text-white px-6 py-2.5 rounded-2xl font-black text-sm shadow-[0_4px_0_#1899D6] hover:brightness-105 active:translate-y-1 active:shadow-none transition-all uppercase tracking-wider">
@@ -35,70 +34,68 @@
     </nav>
 
     <main class="max-w-6xl mx-auto py-16 px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <a href="360-global-edu/360-global-edu.html" target="_blank"
-                class="ppt-card aspect-[16/9] flex flex-col p-0 group overflow-hidden relative border-2 border-[#E5E5E5] rounded-[24px] shadow-[0_6px_0_#E5E5E5] hover:shadow-[0_8px_0_#E5E5E5] transition-all">
-                <div
-                    class="absolute inset-0 w-full h-full bg-white transition-transform duration-500 group-hover:scale-105 origin-center flex items-center px-12">
-                    <div class="w-3/5">
-                        <h3 class="text-2xl font-black text-[#1CB0F6] leading-tight">直通中国</h3>
-                        <h3 class="text-3xl font-black text-[#58CC02] leading-tight tracking-tighter">360 Global Edu
-                        </h3>
-                        <p class="text-[8px] font-bold text-gray-300 mt-2 tracking-[0.2em] uppercase opacity-60">Digital
-                            Admissions 2026</p>
-                    </div>
-                    <div class="ml-auto">
+
+        <div class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <h2 class="text-2xl font-black text-gray-800 tracking-tighter">方案</h2>
+                <div class="h-1 flex-1 bg-gray-100 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <a href="360-global-edu/360-global-edu.html" target="_blank"
+                    class="group flex flex-col bg-white border-2 border-[#E5E5E5] rounded-[24px] shadow-[0_6px_0_#E5E5E5] hover:shadow-[0_8px_0_#E5E5E5] hover:-translate-y-1 transition-all overflow-hidden h-full">
+                    <div class="aspect-video w-full overflow-hidden border-b-2 border-gray-100 relative bg-[#58CC02]">
                         <div
-                            class="w-16 h-16 bg-[#58CC02] rounded-[1.2rem] flex items-center justify-center text-white text-3xl font-black italic shadow-lg">
+                            class="absolute inset-0 flex items-center justify-center text-white text-5xl font-black italic">
                             C</div>
                     </div>
-                </div>
-                <div
-                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/80 to-transparent p-6 pt-12 z-10">
-                    <div class="text-gray-300 group-hover:text-[#1CB0F6] transition-colors mb-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                    </div>
-                </div>
-            </a>
-
-            <a href="Kaplan/Kaplan.html" target="_blank"
-                class="ppt-card aspect-[16/9] flex flex-col p-0 group overflow-hidden relative border-2 border-[#E5E5E5] rounded-[24px] shadow-[0_6px_0_#E5E5E5] hover:shadow-[0_8px_0_#E5E5E5] transition-all">
-                <div
-                    class="absolute inset-0 w-full h-full bg-white transition-transform duration-500 group-hover:scale-105 origin-center flex items-center px-12">
-                    <div class="w-3/5">
-                        <h3 class="text-2xl font-black text-[#2D0064] leading-tight">集团化预科</h3>
-                        <h3 class="text-4xl font-black text-[#6D28D9] leading-tight tracking-tighter">Kaplan</h3>
-                        <p class="text-[8px] font-bold text-gray-300 mt-2 tracking-[0.2em] uppercase opacity-60">Digital
-                            Admissions 2026</p>
-                    </div>
-                    <div class="ml-auto">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4
+                            class="text-lg font-black text-gray-800 group-hover:text-[#1CB0F6] transition-colors leading-tight">
+                            直通中国：360 Global Edu</h4>
+                        <p class="text-[11px] font-bold text-gray-400 mt-2 leading-relaxed flex-1">CSCA初步调研方案</p>
                         <div
-                            class="w-16 h-16 bg-[#2D0064] rounded-[1.2rem] flex items-center justify-center text-white text-3xl font-black italic shadow-lg">
+                            class="flex items-center text-[10px] font-black uppercase tracking-widest text-[#1CB0F6] mt-4 pt-4 border-t border-gray-50">
+                            查看方案 <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Kaplan/Kaplan.html" target="_blank"
+                    class="group flex flex-col bg-white border-2 border-[#E5E5E5] rounded-[24px] shadow-[0_6px_0_#E5E5E5] hover:shadow-[0_8px_0_#E5E5E5] hover:-translate-y-1 transition-all overflow-hidden h-full">
+                    <div class="aspect-video w-full overflow-hidden border-b-2 border-gray-100 relative bg-[#2D0064]">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center text-white text-5xl font-black italic">
                             K</div>
                     </div>
-                </div>
-                <div
-                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/80 to-transparent p-6 pt-12 z-10">
-                    <div class="text-gray-300 group-hover:text-[#1CB0F6] transition-colors mb-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4
+                            class="text-lg font-black text-gray-800 group-hover:text-[#1CB0F6] transition-colors leading-tight">
+                            名校桥梁：Kaplan</h4>
+                        <p class="text-[11px] font-bold text-gray-400 mt-2 leading-relaxed flex-1">SAT等考试培训、集团化预科等
+                        </p>
+                        <div
+                            class="flex items-center text-[10px] font-black uppercase tracking-widest text-[#1CB0F6] mt-4 pt-4 border-t border-gray-50">
+                            查看方案 <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center gap-3 mb-8">
+                <h2 class="text-2xl font-black text-gray-800 tracking-tighter">项目</h2>
+                <div class="h-1 flex-1 bg-gray-100 rounded-full"></div>
+            </div>
+            <div id="projectGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
         </div>
     </main>
 
     <div id="overlay"
         class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden z-[60] transition-opacity duration-300 opacity-0">
     </div>
-
     <aside id="sidebar"
         class="fixed right-0 top-0 h-full w-[400px] bg-white z-[70] sidebar-hidden flex flex-col shadow-2xl">
         <div class="p-8 border-b-2 border-gray-100 flex justify-between items-center">
@@ -109,9 +106,7 @@
             <button id="closeSidebar"
                 class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-800 transition-all font-bold text-xl">✕</button>
         </div>
-
         <div id="libraryContainer" class="flex-1 overflow-y-auto p-6 bg-[#F8FAFC] space-y-4"></div>
-
         <div class="p-6 border-t-2 border-gray-100 bg-white text-center">
             <p class="text-[10px] font-bold text-gray-300 uppercase tracking-widest">© 2026 coco-os Strategic Plan</p>
         </div>
@@ -119,7 +114,43 @@
 
     <script src="resources.js"></script>
     <script>
-        // 1. 渲染资料库内容
+        // ✨ 渲染执行项目 (与上方卡片类名完全一致)
+        const projectGrid = document.getElementById('projectGrid');
+        if (typeof projectData !== 'undefined' && projectGrid) {
+            projectGrid.innerHTML = projectData.map(item => {
+                const screenshotUrl = `https://api.microlink.io/?url=${encodeURIComponent(item.link)}&screenshot=true&embed=screenshot.url`;
+
+                return `
+                    <a href="${item.link}" target="_blank" 
+                       class="group flex flex-col bg-white border-2 border-[#E5E5E5] rounded-[24px] shadow-[0_6px_0_#E5E5E5] hover:shadow-[0_8px_0_#E5E5E5] hover:-translate-y-1 transition-all overflow-hidden h-full">
+                        
+                        <div class="aspect-video w-full overflow-hidden border-b-2 border-gray-100 relative bg-gray-50 flex-shrink-0">
+                            <img src="${screenshotUrl}" 
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                                 alt="${item.title}" loading="lazy"
+                                 onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center text-4xl bg-gray-100\\'>🚀</div>'">
+                            <div class="absolute inset-0 flex items-center justify-center bg-gray-50 -z-10 text-[10px] font-bold text-gray-400 uppercase">
+                                Generating Preview...
+                            </div>
+                        </div>
+
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h4 class="text-lg font-black text-gray-800 group-hover:text-[#1CB0F6] transition-colors leading-tight line-clamp-1">
+                                ${item.title}
+                            </h4>
+                            <p class="text-[11px] font-bold text-gray-400 mt-2 leading-relaxed flex-1 line-clamp-2">
+                                ${item.desc}
+                            </p>
+                            <div class="flex items-center text-[10px] font-black uppercase tracking-widest text-[#1CB0F6] mt-4 pt-4 border-t border-gray-50 flex-shrink-0">
+                                进入项目 <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                            </div>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        // 资料库渲染逻辑
         const container = document.getElementById('libraryContainer');
         if (typeof libraryData !== 'undefined' && container) {
             container.innerHTML = libraryData.map(item => `
@@ -130,42 +161,24 @@
                     </div>
                     <div class="flex-1">
                         <div class="text-sm font-black text-gray-700">${item.title}</div>
-                        <div class="text-[10px] font-bold text-gray-400 mt-1 uppercase">${item.size} • 点击预览</div>
+                        <div class="text-[10px] font-bold text-gray-400 mt-1 uppercase">${item.size}  ${item.info}</div>
                     </div>
                     <div class="text-gray-200 group-hover:text-blue-400 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg>
                     </div>
                 </a>
             `).join('');
         }
 
-        // 2. 控制侧边栏逻辑
+        // 侧边栏逻辑逻辑...
         const sidebar = document.getElementById('sidebar');
         const overlay = document.getElementById('overlay');
         const downloadBtn = document.getElementById('downloadBtn');
         const closeSidebar = document.getElementById('closeSidebar');
 
-        function openSidebar() {
-            sidebar.classList.remove('sidebar-hidden');
-            overlay.classList.remove('hidden');
-            setTimeout(() => overlay.classList.add('opacity-100'), 10);
-        }
-
-        function hideSidebar() {
-            sidebar.classList.add('sidebar-hidden');
-            overlay.classList.remove('opacity-100');
-            setTimeout(() => {
-                if (!sidebar.classList.contains('sidebar-hidden')) return;
-                overlay.classList.add('hidden');
-            }, 300);
-        }
-
-        downloadBtn.addEventListener('click', openSidebar);
-        closeSidebar.addEventListener('click', hideSidebar);
-        overlay.addEventListener('click', hideSidebar);
+        downloadBtn.onclick = () => { sidebar.classList.remove('sidebar-hidden'); overlay.classList.remove('hidden'); setTimeout(() => overlay.classList.add('opacity-100'), 10); };
+        const hideSidebar = () => { sidebar.classList.add('sidebar-hidden'); overlay.classList.remove('opacity-100'); setTimeout(() => overlay.classList.add('hidden'), 300); };
+        closeSidebar.onclick = hideSidebar; overlay.onclick = hideSidebar;
     </script>
 </body>
 
